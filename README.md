@@ -12,7 +12,8 @@ This component renders a sidebar module for a music player app page.
  GET /currentsong
  *status 200*
  Return JSON object of current song currently selected in track
- EX:
+ EX: flynn
+
  {
         id: 1
         song_name: string
@@ -25,7 +26,8 @@ This component renders a sidebar module for a music player app page.
  GET /relatedsongs
  *status 200*
  Return JSON array containg objects containing list of songs related to current song
- EX:
+ EX:flynn
+
  [
     {
         id: 1
@@ -63,8 +65,8 @@ This component renders a sidebar module for a music player app page.
 GET /relatedplaylists
  *status 200*
  Return JSON array containg objects containing list of playlist related to current song in playlist
+ EX:flynn
 
- EX:
  [
     {
         id: 1
@@ -99,8 +101,8 @@ GET /relatedplaylists
 GET /likes&reposts
 *status 200*
 Return JSON array containing two nested arrays which contain the relevent likes and reposts to the song or playlist
+EX: flynn
 
-EX:
 [
   [
     {
