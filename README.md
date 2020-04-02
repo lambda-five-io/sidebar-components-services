@@ -141,9 +141,9 @@ EX: flynn
 ]
 
 POST /userlike
-*status 200*
+*status 201*
 Post user like status to database on certian song or playlist
 
 PUT /userselect
-*status 200*
+*status 201*
 Put the new playlist or song selected as the one being currently or just last played in database
