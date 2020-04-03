@@ -13,6 +13,7 @@ This component renders a sidebar module for a music player app page.
  *status 200*
  Return JSON object of current song currently selected in track
  EX: flynn
+ [
 
  {
         id: 1
@@ -22,6 +23,8 @@ This component renders a sidebar module for a music player app page.
         song_audio: string (url)
         tableID: integer
     }
+    
+ ]
 
  GET /relatedsongs
  *status 200*
@@ -29,6 +32,7 @@ This component renders a sidebar module for a music player app page.
  EX:flynn
 
  [
+
     {
         id: 1
         song_name: string
@@ -60,6 +64,7 @@ This component renders a sidebar module for a music player app page.
         tableID: integer
         relatedToo: string
     }
+
 ]
 
 GET /relatedplaylists
@@ -68,6 +73,7 @@ GET /relatedplaylists
  EX:flynn
 
  [
+
     {
         id: 1
         playlist_name: string
@@ -96,6 +102,7 @@ GET /relatedplaylists
         tableID: integer
         relatedToo: string
     },
+
 ]
 
 GET /likes&reposts
@@ -114,7 +121,7 @@ EX: flynn
       userImage: string (url)
       song_info: string
     },
-    
+
     .
     .
     .
@@ -126,6 +133,7 @@ EX: flynn
     }
   ]
   [
+
     {
       liked: bool
       user_id: string
