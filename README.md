@@ -72,7 +72,7 @@ GET /relatedplaylists
         id: 1
         playlist_name: string
         creator_name: string
-        playlist_image: string (url)
+        playlistImage: string (url)
         tableID: integer
         relatedToo: string
     },
@@ -81,7 +81,7 @@ GET /relatedplaylists
         id: 2
         playlist_name: string
         creator_name: string
-        playlist_image: string (url)
+        playlistImage: string (url)
         tableID: integer
         relatedToo: string
     },
@@ -92,7 +92,7 @@ GET /relatedplaylists
         id: n
         playlist_name: string
         creator_name: string
-        playlist_image: string (url)
+        playlistImage: string (url)
         tableID: integer
         relatedToo: string
     },
@@ -104,11 +104,13 @@ Return JSON array containing two nested arrays which contain the relevent likes 
 EX: flynn
 
 [
+  
+
   [
     {
       liked: bool
       user_id: string
-      user_image: string (url)
+      userImage: string (url)
       song_info: string
     },
     .
@@ -117,7 +119,7 @@ EX: flynn
     {
       liked: bool
       user_id: string
-      user_image: string (url)
+      userImage: string (url)
       song_info: string
     }
   ]
@@ -125,8 +127,8 @@ EX: flynn
     {
       liked: bool
       user_id: string
-      user_image: string (url)
-      playlist_info: string
+      userImage: string (url)
+      playlistInfo: string
     },
     .
     .
@@ -134,10 +136,11 @@ EX: flynn
     {
       liked: bool
       user_id: string
-      user_image: string (url)
-      playlist_info: string
+      userImage: string (url)
+      playlistInfo: string
     }
   ]
+
 ]
 
 POST /userlike
