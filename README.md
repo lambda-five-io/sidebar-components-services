@@ -104,15 +104,17 @@ Return JSON array containing two nested arrays which contain the relevent likes 
 EX: flynn
 
 [
-  
+
 
   [
+
     {
       liked: bool
       user_id: string
       userImage: string (url)
       song_info: string
     },
+    
     .
     .
     .
@@ -139,6 +141,7 @@ EX: flynn
       userImage: string (url)
       playlistInfo: string
     }
+
   ]
 
 ]
