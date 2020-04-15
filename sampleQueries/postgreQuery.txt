@@ -1,0 +1,29 @@
+ "There are thousands of more lines"
+
+
+ SELECT * FROM albums WHERE genre = 'punkbilly';
+ 
+ id    |    name     | creator_id |   genre   
+----------+-------------+------------+-----------
+ A1840002 | Sophia      | U1000001   | punkbilly
+ A1840004 | Clovis      | U1000001   | punkbilly
+ A1840005 | Kaylie      | U1000001   | punkbilly
+ A1840012 | Mallie      | U1000002   | punkbilly
+ A1840016 | Fabiola     | U1000002   | punkbilly
+ A1840028 | Alena       | U1000003   | punkbilly
+ A1840030 | Lelia       | U1000003   | punkbilly
+ A1840033 | Zaria       | U1000004   | punkbilly
+ A1840046 | Karli       | U1000005   | punkbilly
+ A1840048 | Marlee      | U1000005   | punkbilly
+ A1840062 | Delores     | U1000006   | punkbilly
+ A1840067 | Therese     | U1000007   | punkbilly
+ A1840070 | Laury       | U1000007   | punkbilly
+ A1840071 | Brendon     | U1000007   | punkbilly
+ A1840089 | Lavina      | U1000009   | punkbilly
+ A1840092 | Erin        | U1000009   | punkbilly
+ A1840097 | Kellen      | U1000009   | punkbilly
+ A1840099 | Zackery     | U1000010   | punkbilly
+ A1840105 | Enid        | U1000010   | punkbilly
+ A1840112 | Maida       | U1000011   | punkbilly
+ A1840126 | Mozell      | U1000012   | punkbilly
+ A1840127 | Stanley     | U1000012   | punkbilly
