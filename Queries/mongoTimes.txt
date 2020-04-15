@@ -1,0 +1,58 @@
+ 
+ 
+ db.users.find({user_id:"u13335"}).explain("executionStats")
+{
+	"queryPlanner" : {
+		"plannerVersion" : 1,
+		"namespace" : "soundCloud.users",
+		"indexFilterSet" : false,
+		"parsedQuery" : {
+			"user_id" : {
+				"$eq" : "u13335"
+			}
+		},
+		"winningPlan" : {
+			"stage" : "COLLSCAN",
+			"filter" : {
+				"user_id" : {
+					"$eq" : "u13335"
+				}
+			},
+			"direction" : "forward"
+		},
+		"rejectedPlans" : [ ]
+	},
+	"executionStats" : {
+		"executionSuccess" : true,
+		"nReturned" : 1,
+		"executionTimeMillis" : 31,
+		"totalKeysExamined" : 0,
+		"totalDocsExamined" : 40000,
+		"executionStages" : {
+			"stage" : "COLLSCAN",
+			"filter" : {
+				"user_id" : {
+					"$eq" : "u13335"
+				}
+			},
+			"nReturned" : 1,
+			"executionTimeMillisEstimate" : 1,
+			"works" : 40002,
+			"advanced" : 1,
+			"needTime" : 40000,
+			"needYield" : 0,
+			"saveState" : 312,
+			"restoreState" : 312,
+			"isEOF" : 1,
+			"direction" : "forward",
+			"docsExamined" : 40000
+		}
+	},
+	"serverInfo" : {
+		"host" : "rich-ThinkPad-T480",
+		"port" : 27017,
+		"version" : "4.2.3",
+		"gitVersion" : "6874650b362138df74be53d366bbefc321ea32d4"
+	},
+	"ok" : 1
+}

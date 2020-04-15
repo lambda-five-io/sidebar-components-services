@@ -1,0 +1,35 @@
+soundcloud=# EXPLAIN ANALYZE SELECT * FROM albums WHERE genre = 'blues';
+                                                 QUERY PLAN                                                  
+-------------------------------------------------------------------------------------------------------------
+ Seq Scan on albums  (cost=0.00..8154.00 rows=79307 width=33) (actual time=0.024..47.335 rows=80223 loops=1)
+   Filter: ((genre)::text = 'blues'::text)
+   Rows Removed by Filter: 319777
+ Planning time: 0.101 ms
+ Execution time: 50.180 ms
+(5 rows)
+
+    id    |    name     | creator_id | genre 
+----------+-------------+------------+-------
+ A1840001 | Erica       | U1000001   | blues
+ A1840006 | Leora       | U1000001   | blues
+ A1840010 | Reid        | U1000001   | blues
+ A1840015 | Willow      | U1000002   | blues
+ A1840022 | Mable       | U1000003   | blues
+ A1840027 | Parker      | U1000003   | blues
+ A1840029 | Rosie       | U1000003   | blues
+ A1840035 | Nicholaus   | U1000004   | blues
+ A1840039 | Baby        | U1000004   | blues
+ A1840040 | Bernadette  | U1000004   | blues
+ A1840045 | Krystal     | U1000005   | blues
+ A1840064 | Clement     | U1000006   | blues
+ A1840072 | Ashlynn     | U1000007   | blues
+ A1840073 | Coleman     | U1000007   | blues
+ A1840074 | Wilber      | U1000007   | blues
+ A1840076 | Eldred      | U1000007   | blues
+ A1840081 | Gussie      | U1000008   | blues
+ A1840082 | Madelyn     | U1000008   | blues
+ A1840084 | Briana      | U1000008   | blues
+ A1840086 | Dillon      | U1000008   | blues
+ A1840090 | Trace       | U1000009   | blues
+ A1840102 | Jerad       | U1000010   | blues
+:
